@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta lang="en" />
+        <title>Let and Const</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css" />
+        </head>
+<body width=100%>
+    <main id="main">
+        <a href="https://github.com/ericbroome/SpringBoard_10.2.7">GitHub Source</a>
+        <ul>
+            <li>What is the difference between <i>var</i> and <i>let</i>?
+                <ul>
+                    <li>
+                        <i>Var</i> is function scope whereas <i>let</i> is <i>block</i> scope,
+                        meaning that a <i>var</i> declared within a <i>block</i> (such as a for loop)
+                        is accessible outside the loop while an object declared/defined with <i>let</i> is
+                        only accessible within the block.
+                    </li>
+                    <li>
+                        An object declared with <i>var</i> can be redeclared whereas an object declared with
+                        <i>let</i> cannot be redeclared.
+                    </li>
+                    <li>
+                        <li>An object declared as <i>var</i> can be <a href="#hoisted, javascript:highlightHoist()">hoisted</a></i>.
+                    </li>
+                 </ul>
+            </li>
+            <li>What is the difference between <i>var</i> and <i>const</i>?
+                <ul>
+                    <li>
+                        <i>Var</i> has function scope whereas <i>const</i> has block scope.
+                    </li>
+                    <li>
+                        <i>Var</i> can be redeclared as well as reassigned whereas <i>const</i> can only be declared once and cannot be reassigned.
+                        For example, if a <i>const</i> is declared to be an array it will always be an array although the contents of that array
+                        can be changed. Conversely, a <i>var</i> may be declared to be an array then redefined to be any other object such as Number or String.
+                    </li>
+                    <li>
+                        <i>Var</i> can be hoisted wherease <i>const</i> cannot.
+                    </li>
+                </ul>
+            </li>
+            </ul>
+            <li>What is the difference between <i>let</i> and <i>const</i>?
+                <ul>
+                    <li>
+                        <i>Let</i> and <i>const</i> cannot be redeclared but let can be reassigned whereas <i>const</i> cannot.
+                    </li>
+                </ul>
+            </li>
+            <li>What is <a name="hoisted"><i>hoisting</i></a>?
+                <ul>
+                    <li data-highlighted=false>
+                        <i>Hoisted</i> variables can be accessed before being declared within the source code.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/boot.js"></script>
+    <script src="./letconst-test.js"></script>
+</body>
+
+</html>
+
